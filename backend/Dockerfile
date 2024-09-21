@@ -4,6 +4,9 @@ FROM node:18-alpine
 # 设置工作目录
 WORKDIR /app
 
+# 设置 npm registry
+ENV npm_config_registry=https://registry.npmmirror.com/
+
 # 复制 package.json 和 package-lock.json 到容器
 COPY package*.json ./
 
