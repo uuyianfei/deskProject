@@ -54,7 +54,7 @@ $(document).ready(function() {
 						define:function(){
 							$.ajax({
 								// 3.79.3.6
-								url: 'http://172.17.0.1:3000/sendEmail',
+								url: 'http://162.62.134.118:3000/sendEmail',
 								type: 'POST',
 								data: formData,
 								success: function(response) {
