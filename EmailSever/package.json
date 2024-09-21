@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "emailjs": "^4.0.2",
+    "esbuild": "^0.19.5",
+    "esm": "^3.2.25",
+    "express": "^4.18.2"
+  },
+  "type": "module",
+  "scripts": {
+    "serve": "node serve/serve.js",
+    "build": "./node_modules/.bin/esbuild serve/serve.js --bundle --minify --outfile=dist.js --platform=node"
+  }
+}
