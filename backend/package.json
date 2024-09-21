@@ -8,7 +8,7 @@
   },
   "type": "module",
   "scripts": {
-    "serve": "node serve/serve.js",
+    "start": "node serve/serve.js",
     "build": "./node_modules/.bin/esbuild serve/serve.js --bundle --minify --outfile=dist.js --platform=node"
   }
 }
