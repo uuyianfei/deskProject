@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const client = new SMTPClient({
     user: 'cachina01@163.com',
-    password: 'GRHMTGRGDDFDKOPO',
+    password: 'MPcBU6VKAqjCN5XA',
     host: 'smtp.163.com',
     ssl: true,
 });
@@ -52,7 +52,7 @@ const sendEmail = (obj, callback) => {
   
     sendEmail(obj, (err) => {
       if (err) {
-        return res.status(500).json({ code: 500, message: 'Send Failed' });
+        return res.status(500).json({ code: 500, message: 'Send Failed:'+err});
       }
   
       res.json({

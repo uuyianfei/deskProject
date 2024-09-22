@@ -46,7 +46,8 @@ $(document).ready(function() {
 				code: code
 			};
 			// 发送POST请求
-			
+			// const url = 'http://localhost:3000/sendEmail'
+			const url = 'https://api.nistac.de/sendEmail'
 			$.confirm('确定提交留言吗?','提示信息',{
 						confirmButtonText: '确定',
 						cancelButtonText: '取消',
@@ -54,7 +55,7 @@ $(document).ready(function() {
 						define:function(){
 							$.ajax({
 								// 3.79.3.6
-								url: 'http://162.62.134.118:3000/sendEmail',
+								url: url,
 								type: 'POST',
 								data: formData,
 								success: function(response) {
