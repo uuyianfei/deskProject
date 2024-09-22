@@ -429,6 +429,9 @@ b{
 	background-size: 100%;
 	padding: 50px 0 10px 0;
 }
+.contact.c2{
+	background: #dddcd7;
+}
 .contact input,
 .contact textarea{
 	display: block;
